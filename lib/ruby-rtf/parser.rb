@@ -11,7 +11,7 @@ module RubyRTF
     attr_reader :doc
 
     # @param unknown_control_warning_enabled [Boolean] Whether to write unknown control directive warnings to STDERR
-    def initialize(unknown_control_warning_enabled: true)
+    def initialize(unknown_control_warning_enabled = true)
       # default_mods needs to be the same has in the formatting stack and in
       # the current_section modifiers or the first stack ends up getting lost.
       default_mods = {}
